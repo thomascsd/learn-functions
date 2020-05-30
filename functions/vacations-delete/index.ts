@@ -6,7 +6,7 @@ const httpTrigger: AzureFunction = async function (
   req: HttpRequest
 ): Promise<void> {
   context.log('HTTP trigger function processed a request.');
-  await vacationService.getVacations(context);
+  await vacationService.deleteVacation(context);
 };
 
 export default httpTrigger;
